@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Лента с автоподгрузкой записей</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        //TODO: авто таблица Python
+        $(document).ready(function () {
+            //Получение записей посредством кнопки (вариант 1)
+            dataList.runOnClickBtn();
+
+            //Получение записей автоматически при прокрутке страницы
+            //dataList.runOnScroll();
+
+            //Подгружаем первую часть записей
+            dataList.onLoadData();
+        });
+    </script>
+</head>
+<body>
+<!--Контейнер под полученные записи-->
+<div id="posts"></div>
+<!--Контейнер под кнопку и экран ожидание-->
+<div class="list">
+    <div id="list-posts-btn">Загрузить еще данные...</div>
+    <img src="autoload.gif" id="list-posts-loader" width="160" height="20" alt="Экран ожидания">
+</div>
+</body>
+</html>
