@@ -1,0 +1,33 @@
+body {
+    font-size: 14px;
+    padding: 25px;
+}
+
+.list {
+    width: 160px;
+    height: 30px;
+    text-align: center;
+}
+
+#list-posts-btn {
+    background-color: darkslategrey;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid black;
+}
+
+#list-posts-loader {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.item {
+    border: 1px solid darkslategrey;
+    padding: 12px;
+    margin-bottom: 7px;
+}
+
+.item__content {
+    padding: 7px 0;
+}
